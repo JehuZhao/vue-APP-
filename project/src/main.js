@@ -3,11 +3,15 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import fastClick from 'fastclick'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import 'default-passive-events' 暂且不知道怎么使用
+import 'swiper/dist/css/swiper.css'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 new Vue({
   router,
   store,
