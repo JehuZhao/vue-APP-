@@ -18,7 +18,7 @@ export default {
     .header
         height: 0.907rem
         overflow:hidden
-        line-height: 0.907rem
+        line-height: 1rem
         text-align:center
         color:#fff
         background:$bgColor
@@ -32,4 +32,5 @@ export default {
             font-size:.4rem
             text-align center
             color:#fff
+            line-height: .9rem
 </style>

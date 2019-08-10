@@ -38,6 +38,7 @@
             .back-icon
                 text-align:center
                 font-size:.4rem
+                padding-top:.02rem
         .header-input
             flex: 1
             height .65rem
