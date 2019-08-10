@@ -2,7 +2,7 @@
     <div>
         <div class="title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img class="item-img" :src="item.imgUrl"/>
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -17,28 +17,8 @@
 <script>
 export default {
     name:'HomeRecommend',
-    data(){
-        return{
-            recommendList:[{
-                id:'0001',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1906/f7/f74f725a5da59bcea3.img.jpg_200x200_23304e5f.jpg',
-                title:'红花湖水上乐园',
-                desc:'⭐⭐⭐⭐⭐',
-                assess:'45条评价'
-            },{
-                id:'0002',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1603/b1/b19c46c888b4b6e790.water.jpg_200x200_522561eb.jpg',
-                title:'双月湾',
-                desc:'⭐⭐⭐⭐⭐',
-                assess:'1245条评价'
-            },{
-                id:'0003',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1711/3a/3a5b9ca51e954a76a3.img.jpg_110x110_c9a72e59.jpg',
-                title:'白盆湖温泉度假村',
-                desc:'⭐⭐⭐⭐⭐',
-                assess:'44条评价'
-            }]
-        }
+    props:{
+        list:Array
     }
 }
 </script>
