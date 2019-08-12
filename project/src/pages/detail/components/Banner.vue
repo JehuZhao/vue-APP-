@@ -4,7 +4,7 @@
             <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1605/c7/c7dd06252f0ff0af90.water.jpg_600x330_b281b9d9.jpg"/>
             <div class="banner-info">
                 <div class="banner-title">南海洋水母王国</div>
-                <div class="banner-number"><span class="iconfont banner-icon">&#xe692;</span>39</div>
+                <div class="banner-number"><span class="iconfont banner-icon">&#xe692;</span>2</div>
             </div>
         </div>
         <common-gallary :imgs='imgs' v-show="showGallary" @close="handleGallaryClose"></common-gallary>
