@@ -7,6 +7,7 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('styles', resolve('src/assets/styles')) // key,value自行定义，比如.set('@@', resolve('src/components'))
+      .set('common', resolve('src/common'))
   },
   devServer: {          //vue cli3在本地配置json数据
     proxy: {
