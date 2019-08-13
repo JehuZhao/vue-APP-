@@ -12,12 +12,10 @@ module.exports = {
   devServer: {          //vue cli3在本地配置json数据
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': '/mock'
-        }
+        target: 'http://localhost:80',
       }
     }
-  }
+  },
+  publicPath:'./',
+  outputDir: 'dist'
 }
