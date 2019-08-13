@@ -38,11 +38,11 @@ export default {
             }
         }
     },
-    activated(){
+    mounted(){
         window.addEventListener('scroll',this.handleScroll)
     },
-    deactivated(){
-        window.removeEventListener('scroll',this.handleScroll)
+    destroyed () {
+        window.removeEventListener('scroll', this.doScroll)
     }
 }
 </script>
@@ -63,7 +63,7 @@ export default {
             color:#fff
             font-size:.4rem
     .header-fixed
-        z-index:1
+        z-index:2
         position:fixed
         top:0
         left:0
