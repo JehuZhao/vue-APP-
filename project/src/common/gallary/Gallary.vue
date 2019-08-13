@@ -58,7 +58,7 @@
             // overflow:hidden
             height:0
             width:100%
-            padding-bottom:80%
+            padding-bottom:100%
             .gallary-img
                 width:100%
             .swiper-pagination
